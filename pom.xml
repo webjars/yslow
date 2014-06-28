@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>yslow</artifactId>
-    <version>3.1.8</version>
+    <version>3.1.9-SNAPSHOT</version>
     <name>YSlow</name>
     <description>WebJar for YSlow</description>
     <url>http://webjars.org</url>
@@ -44,7 +44,7 @@
         <url>http://github.com/webjars/yslow</url>
         <connection>scm:git:https://github.com/webjars/yslow.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/yslow.git</developerConnection>
-        <tag>yslow-3.1.8</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <build>
