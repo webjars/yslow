@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>yslow</artifactId>
-    <version>3.1.8-SNAPSHOT</version>
+    <version>3.1.8</version>
     <name>YSlow</name>
     <description>WebJar for YSlow</description>
     <url>http://webjars.org</url>
@@ -21,7 +21,7 @@
         <upstream.version>3.1.8</upstream.version>
         <upstream.url>https://github.com/marcelduran/yslow/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
-        <requirejs/>
+        <requirejs />
     </properties>
 
     <developers>
@@ -44,7 +44,7 @@
         <url>http://github.com/webjars/yslow</url>
         <connection>scm:git:https://github.com/webjars/yslow.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/yslow.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>yslow-3.1.8</tag>
     </scm>
     
     <build>
@@ -81,7 +81,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/yslow-${upstream.version}/src" excludes="yui/"/>
+                                    <fileset dir="${project.build.directory}/yslow-${upstream.version}/src" excludes="yui/" />
                                 </move>
                             </target>
                         </configuration>
